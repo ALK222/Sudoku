@@ -1,3 +1,6 @@
+/*Programa de Alejandro Barrachina
+Practica 2: Sudokus*/
+
 #include "ListaJugadores.h"
 
 //CREAR LISTA VACIA DE JUGADORES
@@ -47,7 +50,7 @@ void mostrar(const tListaJugadores &l) {
 		colorLetra(14);
 		cout << (*l.jugadores[i]).identificador;
 		colorLetra(10);
-		cout << "Puntuación: ";
+		cout << "PuntuaciÃ³n: ";
 		colorLetra(14);
 		cout << (*l.jugadores[i]).puntos << endl;
 	}
@@ -87,7 +90,7 @@ bool puntuarJugardor(tListaJugadores &l, int puntos, int desventaja) {
 	int pos = 0;
 	char opcion = 0;
 	colorLetra(10);
-	cout << "¿ID del jugador? ";
+	cout << "Â¿ID del jugador? ";
 	colorLetra(14);
 	cin >> id;
 	tListaJugadores temp = ordenarPorID(l);
