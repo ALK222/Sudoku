@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam MartÌn
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #pragma once
 #include "Tablero.h"
@@ -16,23 +16,23 @@ typedef struct {
 typedef struct {
 	tSudoku sudoku;
 	tTablero tablero;
-	bool terminado; //indica si el tablero est· lleno
+	bool terminado; //indica si el tablero est√° lleno
 }tJuego;
 
 
 //Prototipos
-int jugarUnSudoku(const tSudoku &sudoku);/*dada la informaciÛn del sudoku elegido lleva a cabo todas las acciones correspondientes a haber
-elegido la opciÛn 1 de esta versiÛn y devuelve la puntuaciÛn
-obtenida por el jugador (0 si aborta la resoluciÛn antes de rellenar
+int jugarUnSudoku(const tSudoku &sudoku);/*dada la informaci√≥n del sudoku elegido lleva a cabo todas las acciones correspondientes a haber
+elegido la opci√≥n 1 de esta versi√≥n y devuelve la puntuaci√≥n
+obtenida por el jugador (0 si aborta la resoluci√≥n antes de rellenar
 el tablero o los puntos asociados al sudoku elegido en caso de
 resolverlo)*/
-void iniciaJuego(tJuego &juego, const tSudoku & sudoku); /* recibe en sudoku la informaciÛn del sudoku elegido para jugar e inicializa el
-par·metro juego a un juego no acabado con dicha informaciÛn como
-registro del sudoku a jugar y con un tablero inicializado seg˙n se ha
-indicado en el mÛdulo anterior*/
-bool cargaJuego(tJuego &juego, const tSudoku &sudoku); /*actualiza el tablero del par·metro juego con el contenido del archivo cuyo nombre
-figura en el par·metro de tipo tSudoku recibido*/
-void mostrarJuego(const tJuego &juego); /*muestra por pantalla la informaciÛn del sudoku que se va a jugar asÌ como el tablero del mismo*/
+void iniciaJuego(tJuego &juego, const tSudoku & sudoku); /* recibe en sudoku la informaci√≥n del sudoku elegido para jugar e inicializa el
+par√°metro juego a un juego no acabado con dicha informaci√≥n como
+registro del sudoku a jugar y con un tablero inicializado seg√∫n se ha
+indicado en el m√≥dulo anterior*/
+bool cargaJuego(tJuego &juego, const tSudoku &sudoku); /*actualiza el tablero del par√°metro juego con el contenido del archivo cuyo nombre
+figura en el par√°metro de tipo tSudoku recibido*/
+void mostrarJuego(const tJuego &juego); /*muestra por pantalla la informaci√≥n del sudoku que se va a jugar as√≠ como el tablero del mismo*/
 void mostrarMenuJugada(tJuego &juego, int desventaja); /*Muestra las opciones de una jugada*/
 void opcionJugada(tJuego &juego, int op, int desventaja); /*Switch con las opciones de la jugada*/
 int filaColumna(int op); /*Switch para pedir los datos de fila y columna*/
