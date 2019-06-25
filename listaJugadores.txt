@@ -1,0 +1,19 @@
+48 Aitor
+25 Alex
+47 Alex
+189 Alex
+1 Alvar
+1 Carrero
+1 Croqueta
+0 David
+1 Elena
+1 Eva
+38 Eva
+1 Javi
+1 Pascal
+3 Pene
+1 a
+2 b
+9 b
+3 Alex
+-1
