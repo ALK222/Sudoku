@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #pragma once
 #include "Juego.h"
@@ -16,7 +16,7 @@ typedef struct {
 	int cont;
 }tListaSudokus; //lista de longitud variable de sudokus
 
-void crearListaVacia(tListaSudokus &lista); // Inicializa lista a lista vacía
+void crearListaVacia(tListaSudokus &lista); // Inicializa lista a lista vacÃ­a
 bool cargarS(tListaSudokus &lista); //guardar 
 void mostrar(const tListaSudokus &lista);// visualiza por pantalla la lista de Sudokus dada.
 bool guardar(const tListaSudokus &lista); //almacena en el archivo listasudokus.txt el contenido de la lista y devuelve un bool que indica si se ha podido actualizar o no
@@ -25,8 +25,8 @@ void insertarS(tListaSudokus &lista, const tSudoku &sudoku, bool &lleno, bool &e
 bool buscarFichero(const tListaSudokus &lista, string nombreFich); //devuelve un booleano que indica si existe o no un sudoku en lista con nombre de fichero igual a nombreFich
 bool operator<(const tSudoku &opIzq, const tSudoku &opDer); /* sobrecarga del operador < para los sudokus. Devuelve true si el nivel del sudoku opIzq es menor que el nivel del sudoku 
 															opDery, a igual nivel, devuelve true si el fichero del Sudoku opIzq es menor que el fichero del Sudoku opDer*/
-int buscarPos(const tListaSudokus &lista, const tSudoku &sudoku); /* devuelve la posición de lista en la que debería insertarse sudoku para respetar el orden existente en la lista.
-																	Debe implementar una búsqueda binaria */
+int buscarPos(const tListaSudokus &lista, const tSudoku &sudoku); /* devuelve la posiciÃ³n de lista en la que deberÃ­a insertarse sudoku para respetar el orden existente en la lista.
+																	Debe implementar una bÃºsqueda binaria */
 //void borrarArchivo(tListaSudokus &lista);
 bool suficientesVacios(tTablero &tablero);
 void rellenarArchivo(tTablero &tablero, tSudoku &sudoku);
