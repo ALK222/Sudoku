@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #pragma once
 #include "listaSudokus.h"
@@ -23,10 +23,10 @@ void crearListaVacia(tListaJugadores &l, int capacidad); //Inicializa la lista d
 bool cargarJ(tListaJugadores &l); //carga la lista de jugadores desde el archivo listaJugadores.txt
 void mostrar(const tListaJugadores &l); // muestra la lista de jugadores
 bool guardarJ(tListaJugadores &l); //guarda la lista de jugadores desde el archivo listaJugadores.txt
-bool puntuarJugardor(tListaJugadores &l, int puntos, int desventaja); // Solicita el id. de un jugador y le añade la puntuación pertiente
+bool puntuarJugardor(tListaJugadores &l, int puntos, int desventaja); // Solicita el id. de un jugador y le aÃ±ade la puntuaciÃ³n pertiente
 void insertarJ(tListaJugadores &lista, const string &id, int puntos, bool& ok); // Inserta un jugador en la lista
 int buscar(tListaJugadores &lista, const string &id, int ini, int fin); // Busca un jugadore y su posicion en la lista
-tListaJugadores ordenarPorRanking(const tListaJugadores &lista); // Devuelve una copia de la lista ordenada por puntuación
+tListaJugadores ordenarPorRanking(const tListaJugadores &lista); // Devuelve una copia de la lista ordenada por puntuaciÃ³n
 tListaJugadores copia(const tListaJugadores &lista);//devuelve una copia de la lista
 tListaJugadores ordenarPorID(const tListaJugadores &lista); // Devuelve una copia de la lista ordenada por identificador
 void ampliar(tListaJugadores &lista); // Amplia la lista al doble de su capacidad manteniendo los datos que habia en la orginial
