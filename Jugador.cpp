@@ -1,8 +1,8 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #include "Jugador.h"
 
-//AÑADIR PUNTOS A JUGADOR
+//AÃ‘ADIR PUNTOS A JUGADOR
 
 void modificarJugador(tJugador &jugador, int puntos) {
 	jugador.puntos += puntos;
