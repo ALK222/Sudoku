@@ -1,6 +1,6 @@
 /*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
-//prototipos
+
 
 #include "IA.h"
 
