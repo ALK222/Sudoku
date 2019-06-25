@@ -1,3 +1,6 @@
+/*Programa de Alejandro Barrachina
+Practica 2: Sudokus*/
+
 #include "Juego.h"
 #include "IA.h"
 
@@ -63,7 +66,7 @@ void mostrarJuego(const tJuego &juego) {
 void mostrarMenuJugada(tJuego &juego, int desventaja) {
 	colorLetra(10);
 	int opcion = -1;
-		cout << "¿Qué desea hacer? " << endl;
+		cout << "Â¿QuÃ© desea hacer? " << endl;
 		cout << "1.- Poner numero         2.- Quitar numero" << endl;
 		cout << "3.- Resolver simples     4.- Mostrar posibles" << endl;
 		cout << "5.-Reiniciar tablero     6.- Resolver" << endl;
@@ -79,14 +82,14 @@ void opcionJugada(tJuego &juego, int op, int desventaja) {
 	int numero, fila, columna;
 	colorLetra(10);
 	switch (op){
-	case 1: cout << "¿Qué numero desea poner? ";
+	case 1: cout << "Â¿QuÃ© numero desea poner? ";
 		colorLetra(14);
 		cin >> numero;
 		fila = filaColumna(1);
 		columna = filaColumna(2);
 		if (!ponerNum(juego.tablero, fila, columna, numero)) {
 			colorLetra(12);
-			cout << "No es posible introducir el número en la casilla" << endl;
+			cout << "No es posible introducir el nÃºmero en la casilla" << endl;
 			system("pause");
 		}
 		break;
