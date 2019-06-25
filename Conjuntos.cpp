@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #include "Conjuntos.h"
 
@@ -34,7 +34,7 @@ bool pertenece(const tConjunto &c, int e) {
 	return pertenece;
 }
 
-//AÑADIR UN ELEMENTO DE [1,9] AL CONJUNTO
+//AÃ‘ADIR UN ELEMENTO DE [1,9] AL CONJUNTO
 
 void annadeElemento(tConjunto &c, int e) {
 	if (!c.elementos[e - 1]) {
