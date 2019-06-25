@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #include "Casilla.h"
 
