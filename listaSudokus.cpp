@@ -1,4 +1,4 @@
-/*Programa de Alejandro Barrachina y Airam Martín
+/*Programa de Alejandro Barrachina
 Practica 2: Sudokus*/
 #include "listaSudokus.h"
 
@@ -61,17 +61,17 @@ bool registrarSudoku(tListaSudokus &lista) {
 	bool repetido = false;
 	mostrar(lista);
 	colorLetra(10);
-	cout << endl << "¿Cómo se llama el sudoku que quiere añadir? ";
+	cout << endl << "Â¿CÃ³mo se llama el sudoku que quiere aÃ±adir? ";
 	colorLetra(14);
 	cin >> sudokun.fichero;
 	colorLetra(10);
-	cout << "¿Cuántos puntos se pueden conseguir? ";
+	cout << "Â¿CuÃ¡ntos puntos se pueden conseguir? ";
 	colorLetra(14);
 	cin >> sudokun.nivel;
 	insertarS(lista, sudokun, lleno, repetido);
 	colorLetra(12);
 	if (lleno) {
-		cout << "La lista de sudokus ya está llena" << endl;
+		cout << "La lista de sudokus ya estÃ¡ llena" << endl;
 		system("pause");
 	}
 	else if (repetido) {
